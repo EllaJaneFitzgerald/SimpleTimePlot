@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Plot</title>
+	<link type="text/css" rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.1/d3.min.js"></script>
+	<script type="text/javascript" src="plot.js"></script>
+</head>
+<body>
+	<div class="bounding_box">	
+		<div class="left_panel">
+			<p id="left_panel_right_triangle"></p>
+			<p id="left_panel_left_triangle"></p>
+		</div>
+
+		<div class="input_panel">
+			<p class="title">Data</p>
+			<form onsubmit="addValueAndForm();return false">
+				<input id="inputNumber" type="number" step="1" min="-20" max="20" name="val" value=0>
+			</form>
+			<p>List of values</p>
+			<div id="list">
+			</div>
+		</div>
+
+		<div class="main_content">
+			<svg id="plot">
+			</svg>
+		</div>
+
+		<div class="right_panel">
+			<p id="right_panel_left_triangle"></p>
+			<p id="right_panel_right_triangle"></p>
+		</div>		
+	</div>
+</body>
+</html>

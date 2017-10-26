@@ -1,0 +1,115 @@
+.bounding_box {
+	margin: 0 0;
+	width: 100%;
+	height: 100%;
+	position: relative; 
+	overflow: hidden;
+}
+
+.left_panel, .right_panel {
+	top: 0; 
+	position: absolute; 
+	height: 100%;
+	width: 15vw; 
+	background: #e9e9e9;
+	border-style: solid;
+	border-color: #828282;
+	box-shadow: 0 0 20px #828282;
+}
+		
+.left_panel {
+	margin-left: -15vw; 
+	left: 0; 
+	border-width: 0 1pt 0 0;
+}
+
+.right_panel {
+	margin-right: -15vw; 
+	right: 0; 
+	border-width: 0 0 0 1pt;
+}		
+
+#left_panel_right_triangle, #left_panel_left_triangle,
+#right_panel_right_triangle, #right_panel_left_triangle {
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-bottom: 50px solid transparent;
+	cursor: pointer;
+	margin-top: 50vh;
+}
+
+#left_panel_right_triangle {
+	border-left: 50px solid #5b5ec7;
+	position: absolute;
+	left: 15vw;
+}
+
+#left_panel_left_triangle {
+	border-right: 50px solid #5b5ec7;
+	margin-left: auto;
+	position: relative;
+}
+
+#right_panel_left_triangle {
+	border-right: 50px solid #5b5ec7;
+	right: 15vw;
+	position: absolute;
+}
+
+#right_panel_right_triangle {
+	border-left: 50px solid #5b5ec7;
+	margin-right: auto;
+	position: relative;
+}
+
+#plot {
+	width: 100%;
+	height: 100%;
+}
+
+.main_content, .input_panel {
+	height: 96vh;
+	top: 0;
+	border: 1px solid black;
+}
+
+.main_content {
+	width: auto;
+	margin: 2vh 17vw 2vh 1vw;
+	left: 0;
+}
+
+.input_panel {
+	width: 15vw;
+	margin: 2vh 1vw 2vh 0.5vw;
+	right: 0;
+	float: right;
+	overflow: scroll;
+}
+
+input {
+	margin: 0 0 5px 0.5vw;
+	width: 13vw;
+}
+
+.input_panel p {
+	margin: 20px 0 10px 0.5vw;
+}
+
+.title {
+	margin: 10px 0 10px 0.5vw;
+	font-size: 21px;
+	font-weight: bold;
+}
+
+.list_block input[type='button'] {
+	width: 4.5vw;
+	position: relative;
+	margin-left: -4.5vw;
+}
+
+.dot {	
+    stroke: steelblue;
+    fill: lightblue;
+}
